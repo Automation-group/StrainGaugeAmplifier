@@ -1,0 +1,346 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L LFtransformator:TP-112-11 TV1
+U 1 1 622F4150
+P 3300 3550
+F 0 "TV1" H 3500 3987 60  0000 C CNN
+F 1 "TP-112-11" H 3500 3881 60  0000 C CNN
+F 2 "IWtransformator:TP112-11" H 3300 3550 60  0001 C CNN
+F 3 "" H 3300 3550 60  0000 C CNN
+	1    3300 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L LFconnectors:connector_2pin_gost X1
+U 1 1 622F46E1
+P 2750 3650
+F 0 "X1" H 3117 4013 71  0000 C CNN
+F 1 "DG301-5.0-02P" H 3117 3890 71  0000 C CNN
+F 2 "IWconnectors:DG126-5.0-02P-14" H 3100 3800 50  0001 C CNN
+F 3 "" H 2750 3650 60  0000 C CNN
+	1    2750 3650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L LFconnectors:connector_3pin_gost X2
+U 1 1 622F568B
+P 8750 3600
+F 0 "X2" H 8950 3950 71  0000 L CNN
+F 1 "DG301-5.0-03P" H 8700 3850 71  0000 L CNN
+F 2 "IWconnectors:DG126-5.0-03P-14" H 9100 3750 50  0001 C CNN
+F 3 "" H 8750 3600 60  0000 C CNN
+	1    8750 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3300 3550 3200 3550
+Wire Wire Line
+	3200 3550 3200 3650
+Wire Wire Line
+	3200 3750 3200 3850
+Wire Wire Line
+	3200 3850 3300 3850
+Text Notes 2030 3680 0    43   ~ 0
+~~220В 50Гц
+Text Notes 2030 3780 0    43   ~ 0
+~~220В 50Гц
+$Comp
+L LFdiod:SHOTTKY_DIODE VD1
+U 1 1 622FC89E
+P 4250 3450
+F 0 "VD1" H 4400 3800 71  0000 C CNN
+F 1 "1N5819" H 4400 3700 71  0000 C CNN
+F 2 "IWcomponents:DO-41" H 4250 3450 60  0001 C CNN
+F 3 "" H 4250 3450 60  0000 C CNN
+	1    4250 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LFdiod:SHOTTKY_DIODE VD3
+U 1 1 622FD6FE
+P 4750 3450
+F 0 "VD3" H 4900 3800 71  0000 C CNN
+F 1 "1N5819" H 4900 3700 71  0000 C CNN
+F 2 "IWcomponents:DO-41" H 4750 3450 60  0001 C CNN
+F 3 "" H 4750 3450 60  0000 C CNN
+	1    4750 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L LFdiod:SHOTTKY_DIODE VD2
+U 1 1 622FED0D
+P 4250 3950
+F 0 "VD2" H 4400 4213 71  0000 C CNN
+F 1 "1N5819" H 4400 4090 71  0000 C CNN
+F 2 "IWcomponents:DO-41" H 4250 3950 60  0001 C CNN
+F 3 "" H 4250 3950 60  0000 C CNN
+	1    4250 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L LFdiod:SHOTTKY_DIODE VD4
+U 1 1 622FED17
+P 4750 3950
+F 0 "VD4" H 4900 4213 71  0000 C CNN
+F 1 "1N5819" H 4900 4090 71  0000 C CNN
+F 2 "IWcomponents:DO-41" H 4750 3950 60  0001 C CNN
+F 3 "" H 4750 3950 60  0000 C CNN
+	1    4750 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 3750 3800 3750
+Wire Wire Line
+	3800 3750 3800 3650
+Wire Wire Line
+	3800 3650 3700 3650
+Wire Wire Line
+	3800 3650 4000 3650
+Connection ~ 3800 3650
+Text Label 4000 3650 2    50   ~ 0
+GND
+Wire Wire Line
+	4550 3950 4650 3950
+Wire Wire Line
+	4650 3350 4650 3450
+Wire Wire Line
+	4650 3450 4550 3450
+Wire Wire Line
+	4650 3450 4750 3450
+Connection ~ 4650 3450
+Wire Wire Line
+	4650 4050 4650 3950
+Wire Wire Line
+	3700 4050 4650 4050
+Connection ~ 4650 3950
+Wire Wire Line
+	4650 3950 4750 3950
+Wire Wire Line
+	3700 3350 4650 3350
+Wire Wire Line
+	4250 3950 4150 3950
+Wire Wire Line
+	4150 3950 4150 3450
+Wire Wire Line
+	4150 3450 4250 3450
+Wire Wire Line
+	5050 3450 5150 3450
+Wire Wire Line
+	5150 3450 5150 3950
+Wire Wire Line
+	5150 3950 5050 3950
+$Comp
+L LFcapitors:CAPITORS_ELECTROLYTIC C1
+U 1 1 6230BFD1
+P 5500 3200
+F 0 "C1" V 5150 3100 71  0000 L CNN
+F 1 "1000 мк 50 В" V 5300 2900 71  0000 L CNN
+F 2 "IWcomponents:CAPACITOR_5.08_D13" H 5500 3200 50  0001 C CNN
+F 3 "" H 5500 3200 50  0001 C CNN
+	1    5500 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L LFcapitors:CAPITORS_ELECTROLYTIC C2
+U 1 1 6231042E
+P 5500 3950
+F 0 "C2" V 5600 3550 71  0000 L CNN
+F 1 "1000 мк 50 В" V 5750 3100 71  0000 L CNN
+F 2 "IWcomponents:CAPACITOR_5.08_D13" H 5500 3950 50  0001 C CNN
+F 3 "" H 5500 3950 50  0001 C CNN
+	1    5500 3950
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 4350 5500 4200
+Text Label 5250 3700 0    50   ~ 0
+GND
+Wire Wire Line
+	5500 3950 5500 3700
+Wire Wire Line
+	5250 3700 5500 3700
+Connection ~ 5500 3700
+Wire Wire Line
+	5500 3700 5500 3450
+Wire Wire Line
+	5500 3200 5500 3100
+$Comp
+L LFcomponents:7815 DA1
+U 1 1 62319DE9
+P 6150 2850
+F 0 "DA1" H 6400 3037 60  0000 C CNN
+F 1 "LM7815" H 6400 2931 60  0000 C CNN
+F 2 "IWcomponents:TO220_RAD_16.5x15" H 6150 2850 60  0001 C CNN
+F 3 "" H 6150 2850 60  0000 C CNN
+	1    6150 2850
+	1    0    0    -1  
+$EndComp
+$Comp
+L LFcomponents:7915 DA2
+U 1 1 6231A3E4
+P 6650 4600
+F 0 "DA2" H 6900 4681 60  0000 C CNN
+F 1 "LM7915" H 6900 4787 60  0000 C CNN
+F 2 "IWcomponents:TO220_RAD_16.5x15" H 6650 4600 60  0001 C CNN
+F 3 "" H 6650 4600 60  0000 C CNN
+	1    6650 4600
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	6400 3900 6400 3700
+Wire Wire Line
+	5500 3700 6400 3700
+Connection ~ 6400 3700
+Wire Wire Line
+	6400 3700 6400 3550
+Wire Wire Line
+	5500 3100 5950 3100
+Wire Wire Line
+	5500 4350 5950 4350
+$Comp
+L LFcapitors:CAPITORS_ELECTROLYTIC C3
+U 1 1 62331AE9
+P 7100 3200
+F 0 "C3" V 6750 3150 71  0000 L CNN
+F 1 "220 мк 25 В" V 6900 2950 71  0000 L CNN
+F 2 "IWcomponents:CAPACITOR_3_D8" H 7100 3200 50  0001 C CNN
+F 3 "" H 7100 3200 50  0001 C CNN
+	1    7100 3200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7100 4000 7100 3700
+Connection ~ 7100 3700
+Wire Wire Line
+	7100 3700 7100 3450
+Wire Wire Line
+	7100 3700 7600 3700
+$Comp
+L LFcapitors:CAPITORS_ELECTROLYTIC C4
+U 1 1 62336CAA
+P 7100 4000
+F 0 "C4" V 7550 3900 71  0000 L CNN
+F 1 "220 мк 25 В" V 7700 3650 71  0000 L CNN
+F 2 "IWcomponents:CAPACITOR_3_D8" H 7100 4000 50  0001 C CNN
+F 3 "" H 7100 4000 50  0001 C CNN
+	1    7100 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	6850 4350 7100 4350
+Wire Wire Line
+	7100 4350 7100 4250
+Wire Wire Line
+	6850 3100 7100 3100
+Wire Wire Line
+	7100 3100 7100 3200
+Wire Wire Line
+	6400 3700 7100 3700
+$Comp
+L LFcapitors:CAPITORS C5
+U 1 1 6233D8A1
+P 7600 3200
+F 0 "C5" V 7663 3303 71  0000 L CNN
+F 1 "0.1 мк" V 7786 3303 71  0000 L CNN
+F 2 "IWcomponents:CAPACITOR_K10-17" H 7600 3200 50  0001 C CNN
+F 3 "" H 7600 3200 50  0001 C CNN
+	1    7600 3200
+	0    1    1    0   
+$EndComp
+$Comp
+L LFcapitors:CAPITORS C6
+U 1 1 6233EBC4
+P 7600 4000
+F 0 "C6" V 7663 4103 71  0000 L CNN
+F 1 "0.1 мк" V 7786 4103 71  0000 L CNN
+F 2 "IWcomponents:CAPACITOR_K10-17" H 7600 4000 50  0001 C CNN
+F 3 "" H 7600 4000 50  0001 C CNN
+	1    7600 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7600 4000 7600 3700
+Connection ~ 7600 3700
+Wire Wire Line
+	7600 3450 7600 3700
+Wire Wire Line
+	7600 3100 7600 3200
+Wire Wire Line
+	7100 3100 7600 3100
+Connection ~ 7100 3100
+Wire Wire Line
+	7100 4350 7600 4350
+Wire Wire Line
+	7600 4350 7600 4250
+Connection ~ 7100 4350
+Wire Wire Line
+	8150 3100 7600 3100
+Connection ~ 7600 3100
+Wire Wire Line
+	8150 4350 7600 4350
+Connection ~ 7600 4350
+Wire Wire Line
+	4150 3950 4150 4350
+Wire Wire Line
+	4150 4350 5500 4350
+Connection ~ 4150 3950
+Connection ~ 5500 4350
+Wire Wire Line
+	5500 3100 5150 3100
+Wire Wire Line
+	5150 3100 5150 3450
+Connection ~ 5500 3100
+Connection ~ 5150 3450
+Text Notes 9150 3740 0    50   ~ 0
+Общий
+Text Notes 9150 3840 0    50   ~ 0
++15В
+Text Notes 9150 3640 0    50   ~ 0
+-15В
+Wire Wire Line
+	2750 3650 2950 3650
+Wire Wire Line
+	2950 3650 2950 3750
+Wire Wire Line
+	2950 3750 3200 3750
+Wire Wire Line
+	2750 3750 2850 3750
+Wire Wire Line
+	2850 3750 2850 3700
+Wire Wire Line
+	3050 3700 3050 3650
+Wire Wire Line
+	3050 3650 3200 3650
+Wire Wire Line
+	2850 3700 3050 3700
+Text Label 8150 3100 2    50   ~ 0
++15V
+Text Label 8150 4350 2    50   ~ 0
+-15V
+Wire Wire Line
+	8450 3800 8750 3800
+Text Label 8450 3800 0    50   ~ 0
++15V
+Wire Wire Line
+	8450 3600 8750 3600
+Text Label 8450 3600 0    50   ~ 0
+-15V
+Wire Wire Line
+	8450 3700 8750 3700
+Text Label 8450 3700 0    50   ~ 0
+GND
+$EndSCHEMATC
