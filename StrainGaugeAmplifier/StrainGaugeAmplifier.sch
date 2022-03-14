@@ -121,10 +121,8 @@ F 3 "" H 3500 3350 60  0000 C CNN
 	1    3500 3350
 	-1   0    0    -1  
 $EndComp
-Text Notes 2920 3390 0    50   ~ 0
-IN+
 Text Notes 2920 3490 0    50   ~ 0
-IN-
+IN+
 Text Notes 2890 3590 0    50   ~ 0
 +VCC
 Text Notes 2900 3690 0    50   ~ 0
@@ -132,13 +130,9 @@ GND
 Text Notes 2940 3790 0    50   ~ 0
 Rk
 Wire Wire Line
-	3500 3350 3950 3350
-Wire Wire Line
 	4300 3550 4200 3550
 Wire Wire Line
 	4200 3550 4200 3450
-Wire Wire Line
-	4200 3450 3500 3450
 Wire Wire Line
 	3500 3550 3850 3550
 Text Label 3850 3550 2    50   ~ 0
@@ -250,7 +244,7 @@ U 1 1 6221EE1B
 P 8250 2700
 F 0 "R10" H 8375 3063 71  0000 C CNN
 F 1 "50 к" H 8375 2940 71  0000 C CNN
-F 2 "IWcomponents:RESISTOR_0.25W" H 8250 2700 60  0001 C CNN
+F 2 "IWcomponents:Electron_3296W" H 8250 2700 60  0001 C CNN
 F 3 "~" H 8375 2931 60  0000 C CNN
 	1    8250 2700
 	1    0    0    -1  
@@ -465,7 +459,7 @@ U 1 1 6227A2D8
 P 11450 2650
 F 0 "R17" H 11575 3013 71  0000 C CNN
 F 1 "10 к" H 11575 2890 71  0000 C CNN
-F 2 "IWcomponents:RESISTOR_0.25W" H 11450 2650 60  0001 C CNN
+F 2 "IWcomponents:Electron_3296W" H 11450 2650 60  0001 C CNN
 F 3 "~" H 11575 2881 60  0000 C CNN
 	1    11450 2650
 	1    0    0    -1  
@@ -483,12 +477,8 @@ Wire Wire Line
 Wire Wire Line
 	12050 2650 12050 3150
 Wire Wire Line
-	12050 3350 11950 3350
-Wire Wire Line
 	11950 3150 12050 3150
 Connection ~ 12050 3150
-Wire Wire Line
-	12050 3150 12050 3350
 Wire Wire Line
 	11700 2550 11800 2550
 Wire Wire Line
@@ -502,7 +492,7 @@ U 1 1 6228A897
 P 9350 2050
 F 0 "R12" V 9413 2228 71  0000 L CNN
 F 1 "10 к" V 9536 2228 71  0000 L CNN
-F 2 "IWcomponents:RESISTOR_0.25W" H 9350 2050 60  0001 C CNN
+F 2 "IWcomponents:Electron_3296W" H 9350 2050 60  0001 C CNN
 F 3 "~" H 9475 2281 60  0000 C CNN
 	1    9350 2050
 	0    1    1    0   
@@ -558,10 +548,6 @@ Wire Wire Line
 	10000 3350 10000 4300
 Wire Wire Line
 	10000 4300 13100 4300
-Wire Wire Line
-	13100 4300 13100 3250
-Wire Wire Line
-	13100 3250 13400 3250
 Connection ~ 9350 3150
 Wire Wire Line
 	9350 3150 8850 3150
@@ -621,7 +607,6 @@ Wire Wire Line
 	4250 4450 4250 4800
 Wire Wire Line
 	4250 4800 4050 4800
-Connection ~ 3950 3350
 Wire Wire Line
 	3950 3350 4300 3350
 Wire Wire Line
@@ -822,4 +807,25 @@ Wire Wire Line
 	4000 6950 3500 6950
 Wire Wire Line
 	3500 6750 4000 6750
+Wire Wire Line
+	13100 3250 13400 3250
+Wire Wire Line
+	13100 3250 13100 4300
+Wire Wire Line
+	3500 3350 3750 3350
+Wire Wire Line
+	3750 3350 3750 3450
+Wire Wire Line
+	3750 3450 4200 3450
+Wire Wire Line
+	3500 3450 3650 3450
+Wire Wire Line
+	3650 3450 3650 3250
+Wire Wire Line
+	3650 3250 3950 3250
+Wire Wire Line
+	3950 3250 3950 3350
+Connection ~ 3950 3350
+Text Notes 2920 3390 0    50   ~ 0
+IN-
 $EndSCHEMATC
