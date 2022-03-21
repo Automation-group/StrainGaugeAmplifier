@@ -761,16 +761,12 @@ Text Label 5200 7650 1    50   ~ 0
 GND
 Wire Wire Line
 	5200 7400 5200 7650
-Text Notes 2860 6880 0    50   ~ 0
+Text Notes 2860 6990 0    50   ~ 0
 +VCC
-Wire Wire Line
-	3500 6850 3600 6850
-Wire Wire Line
-	3600 6850 3600 6650
 Connection ~ 3600 6650
 Wire Wire Line
 	3600 6650 3850 6650
-Text Notes 2790 6990 0    50   ~ 0
+Text Notes 2790 7090 0    50   ~ 0
 RELEY_ON
 $Comp
 L LFdiod:DIODE VD2
@@ -804,8 +800,6 @@ Wire Wire Line
 Wire Wire Line
 	4300 6950 4650 6950
 Wire Wire Line
-	4000 6950 3500 6950
-Wire Wire Line
 	3500 6750 4000 6750
 Wire Wire Line
 	13100 3250 13400 3250
@@ -828,4 +822,32 @@ Wire Wire Line
 Connection ~ 3950 3350
 Text Notes 2920 3390 0    50   ~ 0
 IN-
+Text Notes 2900 7190 0    50   ~ 0
+GND
+Text Notes 2900 6890 0    50   ~ 0
+GND
+Wire Wire Line
+	3500 6950 3600 6950
+Wire Wire Line
+	3600 6650 3600 6950
+Wire Wire Line
+	3500 6850 3850 6850
+Text Label 3850 7150 2    50   ~ 0
+GND
+Text Label 3850 6850 2    50   ~ 0
+GND
+Wire Wire Line
+	3500 7150 3850 7150
+Wire Wire Line
+	3500 7050 3700 7050
+Wire Wire Line
+	3700 7050 3700 6950
+Wire Wire Line
+	3700 6950 4000 6950
+Text Notes 13830 3390 0    50   ~ 0
+GND
+Text Notes 13760 3290 0    50   ~ 0
+Усил. 30
+Text Notes 13730 3190 0    50   ~ 0
+Усил. 100
 $EndSCHEMATC
